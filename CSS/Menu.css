@@ -201,51 +201,57 @@
             align-items: center;
             flex-wrap: wrap;
             padding: 4rem 5vmin;
+            gap: 2rem;
+            a {
+                text-decoration: none;
 
-            .menu_card {
-                margin: 1rem;
-                border-radius: 2.03025rem;
-                border: 1.805px solid #822E1B;
-                width: 21.5625rem;
-                height: 23.1875rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                gap: 2rem;
-
-                img {
-                    max-width: 17.35881rem;
-                    width: 100%;
-                    padding: 1rem;
-                    height: 190px;
-
-                }
-
-
-
-                h2 {
-                    color: #822E1B;
-                    font-family: Raleway;
-                    font-size: 1.75rem;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    text-align: center;
-                    letter-spacing: 0.035rem;
-                }
-            }
-
-            @media screen and (max-width: 400px) {
                 .menu_card {
-                    width: 18.5625rem;
+                    border-radius: 2.03025rem;
+                    border: 1.805px solid #822E1B;   
+                    width: 21.5625rem;
+                    height: 23.1875rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 2rem;
+                    cursor: pointer;
+
+                    img {
+                        max-width: 17.35881rem;
+                        width: 100%;
+                        padding: 1rem;
+                        height: 190px;
+
+                    }
+
+
+
+                    h2 {
+                        color: #822E1B;
+                        font-family: Raleway;
+                        font-size: 1.75rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-align: center;
+                        letter-spacing: 0.035rem;
+                    }
+                }
+                @media screen and (max-width: 400px) {
+                    .menu_card {
+                        width: 18.5625rem;
+                    }
                 }
             }
+
+
         }
 
         @media screen and (max-width: 600px) {
             #menu_card {
                 padding: unset;
+                padding: 2rem 0;
             }
         }
     }
@@ -327,6 +333,7 @@
                 }
             }
         }
+
         @media screen and (max-width: 400px) {
             .links {
                 padding: unset;
@@ -373,6 +380,7 @@
                 }
             }
         }
+
         @media screen and (max-width: 400px) {
             .home {
                 padding: unset;
@@ -410,13 +418,15 @@
                 }
             }
         }
+
         @media screen and (max-width: 400px) {
             .timing {
-                
-                h1{
+
+                h1 {
                     padding-left: unset;
                 }
-                ul{
+
+                ul {
                     padding-left: unset;
                 }
             }
@@ -447,10 +457,11 @@
                 }
             }
         }
+
         @media screen and (max-width: 400px) {
             .partners {
-               padding: unset;
-               padding: 1rem 0;
+                padding: unset;
+                padding: 1rem 0;
             }
         }
     }

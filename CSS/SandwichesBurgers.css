@@ -11,6 +11,7 @@
     outline: none;
 }
 
+
 @font-face {
     font-family: 'Anastasia';
     src: url('/font/ANASTAS.TTF') format('truetype');
@@ -143,8 +144,9 @@
     }
 
     .menu_pg1 {
-        background: url(../Assets/Menu/MenuBG.png) center;
+        background: url(../Assets/Drinks/DrinkBg.png) center;
         background-size: cover;
+        margin-bottom: 2rem;
 
         .main {
             display: flex;
@@ -165,9 +167,9 @@
 
             p {
                 max-width: 36.75rem;
+                padding: 1rem 1rem 0rem 1rem;
                 width: 100%;
                 color: #FCF1DB;
-                padding: 1rem 1rem 0rem 1rem;
                 text-align: center;
                 font-family: Raleway;
                 font-size: 1.3125rem;
@@ -180,7 +182,7 @@
     }
 
     .menu_pg2 {
-        padding: 4vmin 0 5vmin 0;
+        padding: 12vmin 0;
 
         h1 {
             color: #822E1B;
@@ -199,23 +201,33 @@
             align-items: center;
             flex-wrap: wrap;
             padding: 4rem 5vmin;
+            gap: 2rem;
 
             .menu_card {
-                padding: 1rem 0;
-                margin: 1rem;
-                border: 1.092px solid #822E1B;
-                width: 24.98656rem;
-                height: 520px;
-                min-height: 19.525rem;
+                border-radius: 2.03025rem;
+                border: 1.805px solid #822E1B;
+                width: 21.562rem;
+                height: 532px;
+                min-height: 30.4375rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 gap: 1.2rem;
+                padding: 1rem 0;
 
-                img {
-                    max-width: 23.89425rem;
-                    width: 100%;
+
+                .drink_height {
+                    height: 232px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-width: 4.05925rem;
+                        width: 100%;
+                    }
+
                 }
 
 
@@ -254,13 +266,17 @@
                     letter-spacing: 0.03125rem;
                 }
             }
-
-            @media screen and (max-width: 450px) {
+            @media screen and (max-width: 400px) {
                 .menu_card {
-                    padding: 1rem .5rem;
-                    margin: .5rem;
-                    width: 18.98656rem;
+                    width: 18.562rem;
                 }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #menu_card {
+                padding: unset;
+                padding: 2rem 0;
             }
         }
     }
