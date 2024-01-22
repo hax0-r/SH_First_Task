@@ -36,7 +36,7 @@ const cardData = [
     {
         img: "./Assets/Menu/menu5.png",
         head: "SANDWICHES <br> & BURGERS",
-        a:"./SandwichesBurgers.html"
+        a:"./Burger.html"
     },
     {
         img: "./Assets/Menu/menu12.png",

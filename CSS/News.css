@@ -219,17 +219,19 @@
                 }
 
 
-
-                h2 {
-                    color: #822E1B;
-                    font-family: Raleway;
-                    font-size: 1.75rem;
-                    font-style: normal;
-                    font-weight: 700;
-                    text-align: center;
-                    padding-top: .5rem;
-                    line-height: normal;
-                    letter-spacing: 0.035rem;
+                a {
+                    text-decoration: none;
+                    h2 {
+                        color: #822E1B;
+                        font-family: Raleway;
+                        font-size: 1.75rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        text-align: center;
+                        padding-top: .5rem;
+                        line-height: normal;
+                        letter-spacing: 0.035rem;
+                    }
                 }
 
                 p {

@@ -11,7 +11,6 @@
     outline: none;
 }
 
-
 @font-face {
     font-family: 'Anastasia';
     src: url('/font/ANASTAS.TTF') format('truetype');
@@ -19,7 +18,7 @@
     font-style: normal;
 }
 
-.menu {
+.blog {
     nav {
         background: #FCF1DB;
 
@@ -142,18 +141,16 @@
             }
         }
     }
-
-    .menu_pg1 {
-        background: url(../Assets/Drinks/DrinkBg.png) center;
+    .blog_pg1 {
+        background: url(../../Assets/Blog/blogBG.png) center;
         background-size: cover;
-        margin-bottom: 2rem;
 
         .main {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            min-height: 18.75rem;
+            min-height: 41.25rem;
 
             h1 {
                 color: #FCF1DB;
@@ -167,8 +164,8 @@
 
             p {
                 max-width: 36.75rem;
-                padding: 1rem 1rem 0rem 1rem;
                 width: 100%;
+                padding: 1rem 1rem 0rem 1rem;
                 color: #FCF1DB;
                 text-align: center;
                 font-family: Raleway;
@@ -181,106 +178,36 @@
         }
     }
 
-    .menu_pg2 {
-        padding: 12vmin 0;
-
-        h1 {
-            color: #822E1B;
-            font-family: Raleway;
-            font-size: 2.5rem;
-            font-style: normal;
-            font-weight: 800;
-            line-height: normal;
-            letter-spacing: 0.05rem;
-            text-align: center;
-        }
-
-        #menu_card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 4rem 5vmin;
-            gap: 2rem;
-
-            .menu_card {
-                border-radius: 2.03025rem;
-                border: 1.805px solid #822E1B;
-                width: 21.562rem;
-                height: 532px;
-                min-height: 30.4375rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                gap: 1.2rem;
-                padding: 1rem 0;
-
-
-                .drink_height {
-                    height: 232px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        max-width: 4.05925rem;
-                        width: 100%;
-                    }
-
-                }
-
-
-
-                h2 {
-                    color: #822E1B;
-                    font-family: Raleway;
-                    font-size: 1.75rem;
-                    font-style: normal;
-                    font-weight: 700;
-                    text-align: center;
-                    padding-top: .5rem;
-                    line-height: normal;
-                    letter-spacing: 0.035rem;
-                }
-
-                p {
-                    color: #822E1B;
-                    font-family: Raleway;
-                    font-size: 0.875rem;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 1.125rem;
-                    letter-spacing: 0.0175rem;
-                    max-width: 17.1875rem;
-                    text-align: center;
-                    width: 100%;
-                }
-
-                h3 {
-                    color: #822E1B;
-                    font-family: Raleway;
-                    font-size: 1.5625rem;
-                    font-style: normal;
-                    font-weight: 700;
-                    letter-spacing: 0.03125rem;
-                }
+    .blog_pg2 {
+        padding: 10vmin 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main {
+            max-width: 80%;
+            width: 100%4;
+            h1 {
+                color: #822E1B;
+                font-family: Raleway;
+                font-size: 2.25rem;
+                padding: 3rem 0 1rem 0;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 3.0625rem;
+                letter-spacing: 0.045rem;
             }
-            @media screen and (max-width: 400px) {
-                .menu_card {
-                    width: 18.562rem;
-                }
-            }
-        }
 
-        @media screen and (max-width: 600px) {
-            #menu_card {
-                padding: unset;
-                padding: 2rem 0;
+            P {
+                color: #822E1B;
+                font-family: Raleway;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.6875rem;
+                letter-spacing: 0.025rem;
             }
         }
     }
-
 
     .footer {
         background: #FCF1DB;
