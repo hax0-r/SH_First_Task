@@ -613,6 +613,7 @@ header {
 
                 ul {
                     padding-left: unset;
+                    margin-right: 2rem;
                 }
             }
         }
