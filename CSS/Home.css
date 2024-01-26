@@ -20,7 +20,7 @@
 
 
 header {
-
+    overflow: hidden;
     nav {
         background: #FCF1DB;
 
@@ -40,6 +40,7 @@ header {
 
             .right {
                 ul {
+                    position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -47,6 +48,19 @@ header {
                     li {
                         margin: 0 .5rem;
                         margin-top: 1.3rem;
+                        display: flex;
+                        justify-content: center;
+
+                        &:first-child::before {
+                            content: '';
+                            width: 3.5rem;
+                            height: 2px;
+                            display: block;
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 0px;
+                            transition: 200ms all;
+                        }
 
                         a {
                             padding: .5rem;
@@ -58,6 +72,28 @@ header {
                             line-height: normal;
                             letter-spacing: 0.44px;
                             text-decoration: none;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+
+                            &::before {
+                                content: '';
+                                width: 0rem;
+                                height: 2px;
+                                display: block;
+                                background-color: #000;
+                                position: absolute;
+                                bottom: 0px;
+                                transition: 200ms all;
+                            }
+
+                            &:hover::before {
+                                width: 3.5rem;
+                            }
+
+                            &:active {
+                                color: #1a1a1a56;
+                            }
                         }
                     }
                 }
@@ -184,7 +220,8 @@ header {
                 letter-spacing: 0.025rem;
                 transition: 200ms all;
                 border: 2px solid #FFF;
-                &:hover{
+
+                &:hover {
                     background-color: transparent;
                     color: #FFF;
                 }
@@ -245,7 +282,8 @@ header {
                 gap: 0.625rem;
                 border: 2px solid #822E1B;
                 transition: 200ms all;
-                &:hover{
+
+                &:hover {
                     background-color: transparent;
                     color: #822E1B;
                 }
@@ -417,7 +455,8 @@ header {
                         border: none;
                         border: 2px solid #822E1B;
                         transition: 200ms all;
-                        &:hover{
+
+                        &:hover {
                             background-color: transparent;
                             color: #822E1B;
                         }
@@ -470,12 +509,12 @@ header {
                 font-size: 1rem;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 1.375rem;
                 letter-spacing: 0.02rem;
                 text-transform: capitalize;
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+                margin-bottom:unset;
 
                 i {
                     color: #822E1B;

@@ -36,7 +36,12 @@ const cardData = [
         img: "./Assets/drinks/drink4.png",
         head: "Michelob Ultra",
         para: "Add an egg for $.99",
-        price: "$7.95"
+        price: "$7
+        
+        
+        
+        
+        .95"
     },
 ]
 

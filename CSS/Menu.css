@@ -38,6 +38,7 @@
 
             .right {
                 ul {
+                    position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -45,6 +46,19 @@
                     li {
                         margin: 0 .5rem;
                         margin-top: 1.3rem;
+                        display: flex;
+                        justify-content: center;
+
+                        &:nth-child(2)::before {
+                            content: '';
+                            width: 3.5rem;
+                            height: 2px;
+                            display: block;
+                            background-color: #000;
+                            position: absolute;
+                            bottom: 0px;
+                            transition: 200ms all;
+                        }
 
                         a {
                             padding: .5rem;
@@ -56,6 +70,28 @@
                             line-height: normal;
                             letter-spacing: 0.44px;
                             text-decoration: none;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+
+                            &::before {
+                                content: '';
+                                width: 0rem;
+                                height: 2px;
+                                display: block;
+                                background-color: #000;
+                                position: absolute;
+                                bottom: 0px;
+                                transition: 200ms all;
+                            }
+
+                            &:hover::before {
+                                width: 3.5rem;
+                            }
+
+                            &:active {
+                                color: #1a1a1a56;
+                            }
                         }
                     }
                 }
@@ -202,12 +238,13 @@
             flex-wrap: wrap;
             padding: 4rem 5vmin;
             gap: 2rem;
+
             a {
                 text-decoration: none;
 
                 .menu_card {
                     border-radius: 2.03025rem;
-                    border: 1.805px solid #822E1B;   
+                    border: 1.805px solid #822E1B;
                     width: 21.5625rem;
                     height: 23.1875rem;
                     display: flex;
@@ -238,6 +275,7 @@
                         letter-spacing: 0.035rem;
                     }
                 }
+
                 @media screen and (max-width: 400px) {
                     .menu_card {
                         width: 18.5625rem;
@@ -285,13 +323,12 @@
                 font-size: 1rem;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 1.375rem;
                 letter-spacing: 0.02rem;
                 text-transform: capitalize;
                 display: flex;
                 align-items: center;
                 gap: 1rem;
-
+                margin-bottom:unset;
                 i {
                     color: #822E1B;
                     font-size: 1.5rem;
