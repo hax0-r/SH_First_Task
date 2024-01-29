@@ -16,13 +16,13 @@ nav_close.addEventListener('click', () => {
 const cardData = [
     {
         img: "./Assets/News/news (1).png",
-        head: "Texas Forever Bar and Grill Turns Over a New Leaf",
+        head: "Texas Forever Bar and Grill Turns Over a...",
         para: "As we transition into a breakfast and lunch haven, exciting changes are happening at Texas....",
         a:"./Blogs_Pages/blog1.html"
     },
     {
         img: "./Assets/News/news (2).png",
-        head: "10 Reasons to Dine at Texas Forever Bar and Grill",
+        head: "10 Reasons to Dine at Texas Forever Bar",
         para: "Texas Forever Bar and Grill stands as more than just a dining establishment; it's a....",
         a:"./Blogs_Pages/blog2.html"
     },
@@ -63,6 +63,10 @@ const postmethod = () => {
         <a href="${e.a}">
             <h2>${e.head}</h2>
             </a>
+            <div class="cardAuthor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcNPOPDCWiEvN0x11fc_02MzdhtzcLOwg-qg&usqp=CAU" alt="">
+            <h5>M Talha</h5>
+        </div>
             <p>${e.para}</p>
         </div>
         `
