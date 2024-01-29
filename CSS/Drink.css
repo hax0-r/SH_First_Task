@@ -161,17 +161,18 @@
                             margin-bottom: 1.5rem;
                             height: 5rem;
                         }
-                        
+
                         li {
                             padding: .5rem 0rem;
                             width: 100%;
                             transition: 300ms all;
                             margin-top: unset;
-                            #navHome{
+
+                            #navDrinks {
                                 background-color: #f5dba7;
                             }
 
-                            
+
                             a {
                                 width: 100%;
                                 padding: 1rem .5rem;
@@ -183,14 +184,15 @@
                                 line-height: normal;
                                 letter-spacing: 0.44px;
                                 text-decoration: none;
-                                
+
                                 &:hover {
                                     background-color: #f5dba7;
                                 }
+
                                 &:hover::before {
                                     width: 0;
                                 }
-                                
+
                             }
                         }
 
@@ -328,6 +330,7 @@
                     letter-spacing: 0.03125rem;
                 }
             }
+
             @media screen and (max-width: 400px) {
                 .menu_card {
                     width: 18.562rem;
@@ -376,7 +379,7 @@
                     display: flex;
                     align-items: center;
                     gap: 1rem;
-                    margin-bottom:unset;
+                    margin-bottom: unset;
 
                     i {
                         color: #822E1B;

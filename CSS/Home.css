@@ -643,7 +643,11 @@ header {
 
                 a {
                     i {
-                        padding: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 3.3rem;
+                        height: 3.3rem;
                         font-size: 1.5rem;
                         border-radius: 7px;
                         background-color: #822E1B;

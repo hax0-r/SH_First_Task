@@ -19,6 +19,7 @@
 }
 
 .menu {
+   
     nav {
         background: #FCF1DB;
 
@@ -160,17 +161,18 @@
                             margin-bottom: 1.5rem;
                             height: 5rem;
                         }
-                        
+
                         li {
                             padding: .5rem 0rem;
                             width: 100%;
                             transition: 300ms all;
                             margin-top: unset;
-                            #navHome{
+
+                            #navMenu {
                                 background-color: #f5dba7;
                             }
 
-                            
+
                             a {
                                 width: 100%;
                                 padding: 1rem .5rem;
@@ -182,14 +184,16 @@
                                 line-height: normal;
                                 letter-spacing: 0.44px;
                                 text-decoration: none;
-                                
+                                transition: 300ms all;
+
                                 &:hover {
                                     background-color: #f5dba7;
                                 }
+
                                 &:hover::before {
                                     width: 0;
                                 }
-                                
+
                             }
                         }
 
