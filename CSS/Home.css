@@ -56,7 +56,7 @@ header {
                         display: flex;
                         justify-content: center;
 
-                        &:first-child::before {
+                        &:nth-child(2)::before {
                             content: '';
                             width: 3.5rem;
                             height: 2px;
@@ -185,6 +185,7 @@ header {
                                 line-height: normal;
                                 letter-spacing: 0.44px;
                                 text-decoration: none;
+                                transition: 300ms all;
                                 
                                 &:hover {
                                     background-color: #f5dba7;
